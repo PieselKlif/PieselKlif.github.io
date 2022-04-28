@@ -1,8 +1,6 @@
 body{
-    /* background-color:  #DAF7A6; */
-    background-color: #000000;
+    background-color:  #DAF7A6;
     font-family: "Lucida Console", "Courier New", monospace;
-    color: #20C20E;
 }
 .menu{
     font-size: 20px;
