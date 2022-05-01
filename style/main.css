@@ -46,6 +46,7 @@ body{
 #main {
     display: -webkit-flex;
     display: flex;
+    margin-bottom: 10px;
 }
 
 #leftPanel {
