@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	background-color: black;
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.top {
+	text-align: center;
+}
+
+.socials {
+	display: inline-block;
+}
+
+.socials p {
+	color: inherit;
+	color: white;
+	text-decoration: none;
+}
+
+.socials .icon {
+	height: 80px;
+	width: auto;
+	/* display: inline; */
+}
+
+.social-box {
+	text-align: center;
+}
