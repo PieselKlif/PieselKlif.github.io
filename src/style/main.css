@@ -1,30 +1,82 @@
 body {
 	margin: 0;
-	background-color: black;
-	color: white;
-	font-family: 'Courier New', Courier, monospace;
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffe600;
+	text-shadow: 2px 2px 3px black;
+}
+
+.sky {
+	background: url("/src/media/sky.jpg") no-repeat;
+	background-size: cover;
+	height: calc(100vh + 800px);
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+	display: block;
 }
 
 .top {
+	padding-top: 10px;
+	padding-bottom: 70px;
 	text-align: center;
+	background: linear-gradient(180deg,rgba(0, 0, 0, 0.600) 0%, rgba(0, 0, 0, 0.500) 60%, rgba(63,58,47,0) 100%);
 }
 
-.socials {
-	display: inline-block;
+.top h1 {
+	font-size: 80px;
 }
 
-.socials p {
-	color: inherit;
-	color: white;
+.content {
+	margin: 2vh;
+}
+
+.about-l {
+	margin-top: 50px;
+	width: 60%;
+	float: left;
+}
+
+.about-r {
+	margin-top: 50px;
+	width: 60%;
+	float: right;
+}
+
+ul {
+	list-style: none;
+	animation: fadeIn 1s;
+}
+
+li a {
+	display: flex;
+	align-items: center;
+	width: 200px;
+	transition: padding-left 0.2s;
 	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffe600;
+	text-shadow: 2px 2px 3px black;
+	margin-top: 5px;
 }
 
-.socials .icon {
-	height: 80px;
-	width: auto;
-	/* display: inline; */
+li a:hover {
+	padding-left: 10px;
+	font-size: 18px;
+	color: #fcec64;
 }
 
-.social-box {
-	text-align: center;
+ul li:last-child {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.icon {
+	width: 60px;
+	margin-right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
