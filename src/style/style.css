@@ -73,9 +73,9 @@ html, body {
 	background-color: #0d1117;
 	padding: 7px 9px;
 	margin: 0px 5px;
-	border-radius: 10px;
+	border-radius: 7px;
 
-	transition: 0.5s;
+	transition: 0.4s;
 
 	color: #d3d3d3;
 }
@@ -83,4 +83,8 @@ html, body {
 .page-link:hover {
 	background-color: #13171d;
 	color: #fff;
+}
+
+.page-link-bar {
+	margin-bottom: 40px;
 }
