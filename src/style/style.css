@@ -11,6 +11,7 @@ html, body {
 	text-align: center;
 	height: 100%;
 	width: 300px;
+	float: left;
 }
 
 .prof {
@@ -24,7 +25,7 @@ html, body {
 }
 
 .panel-button-active {
-	background-color: #080b0f;
+	background-color: #090c10;
 	margin: 10px;
 	display: flex;
 	justify-content: center;
@@ -44,14 +45,42 @@ html, body {
 	color: inherit;
 	text-decoration: inherit;
 
+	color: #a7a7a7;
+
 	transition: 0.5s;
 }
 
 .panel-button:hover {
 	background-color: #13171d;
+	color: #fff;
 }
 
 .panel-button-active i, .panel-button i {
 	position: absolute;
 	left: 28px;
+}
+
+.content {
+	padding: 5px 25px;
+	display:inline-block;
+}
+
+.page-link {
+	user-select: none;
+	color: inherit;
+	text-decoration: inherit;
+
+	background-color: #0d1117;
+	padding: 7px 9px;
+	margin: 0px 5px;
+	border-radius: 10px;
+
+	transition: 0.5s;
+
+	color: #d3d3d3;
+}
+
+.page-link:hover {
+	background-color: #13171d;
+	color: #fff;
 }
