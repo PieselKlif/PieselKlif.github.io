@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 	<link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
 </head>
 <body>
-	<div class="left-panel">
+	<div class="left-panel" id="left-panel">
 		<img src="/src/media/prof.png" class="prof">
 		<h1>PieselKlif</h1>
 
@@ -32,7 +32,7 @@
 	</div>
 	<div class="content">
 		<div style="float: left; width: 100%;">
-			<a class="menu-button">
+			<a class="menu-button" id="menu-button">
 				<i class="gg-menu"></i>
 			</a>
 		</div>
@@ -50,11 +50,15 @@
 			<h3>O mnie</h3>
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat et ipsa molestiae natus ipsam fugiat doloremque modi dolorem officia dolor! Veritatis, aperiam dolorum ab cupiditate a corporis fuga recusandae repellat!</p>
 		</div>
-		<br>
 		<div class="page-home-box">
-			<h3>O mnie</h3>
-			<p>yes</p>
+			<h3>Cytat</h3>
+			<blockquote style="text-align: center;" cite="https://quotefancy.com/quote/1445774/Linus-Torvalds-A-computer-is-like-air-conditioning-it-becomes-useless-when-you-open">
+				<p>“A computer is like air conditioning – it becomes useless when you open Windows.”
+					<i>— Linus Torvalds</i></p>
+			</blockquote>
 		</div>
 	</div>
+
+	<script src="/src/js/main.js"></script>
 </body>
 </html>
