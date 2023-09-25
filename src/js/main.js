@@ -1,15 +1,13 @@
 var menuIsOpen = true;
 
 function toggleMenu() {
-	menuIsOpen = !menuIsOpen;
+	//  TODO zrobić jakąś animacje otwierania i zamykania. Może dawać left-panel display jako absolute, i tak nie będzie widać.
 
-	if (menuIsOpen)
+	if (document.getElementById("left-panel").style.display == "none")
 	{
 		document.getElementById("left-panel").style.display = "block";
-		document.getElementById("menu-button").style.marginLeft = "-70px";
 	}else{
 		document.getElementById("left-panel").style.display = "none";
-		document.getElementById("menu-button").style.marginLeft = "0px";
 	}
 }
 

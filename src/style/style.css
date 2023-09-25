@@ -17,12 +17,14 @@ html, body {
 
 .menu-button {
 	background-color: #13171d;
-	float: left;
-	cursor: pointer;
-	padding: 15px 7px;
-	margin: 10px;
-	margin-left: -70px;
 	border-radius: 5px;
+	cursor: pointer;
+	padding: 16px 7px;
+	float: left;
+
+	position: absolute;
+	left: 10px;
+	top: 10px;
 
 	transition: 0.2s;
 }
@@ -122,7 +124,11 @@ html, body {
 }
 
 @media only screen and (max-width: 700px){
-	body {
-		background-color: red;
+	.left-panel {
+		position: absolute;
+		width: 100%;
+		display: none;
+
+		/* TODO JS zmienia i sprawdza wartość display w html, więc pierwsze kliknięcie będzie ustawiało na none. Trzeba zrobić by sprawdzało po rozdzielczości ekranu czy jest to strona na telefonie, wtedy ustawić.*/
 	}
 }
