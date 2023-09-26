@@ -11,4 +11,11 @@ function toggleMenu() {
 	}
 }
 
+if (screen.width <= 700)
+{
+	document.getElementById("left-panel").style.display = "block";
+} else {
+	document.getElementById("left-panel").style.display = "none";
+}
+
 document.getElementById("menu-button").addEventListener("click", toggleMenu);
