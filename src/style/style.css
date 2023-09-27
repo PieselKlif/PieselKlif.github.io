@@ -146,8 +146,10 @@ html, body {
 
 @media only screen and (max-width: 700px){
 	.left-panel {
-		position: absolute;
 		width: 100%;
-		display: none;
+	}
+
+	.left-panel.close {
+		left: -100%;
 	}
 }
