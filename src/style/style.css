@@ -128,7 +128,5 @@ html, body {
 		position: absolute;
 		width: 100%;
 		display: none;
-
-		/* TODO JS zmienia i sprawdza wartość display w html, więc pierwsze kliknięcie będzie ustawiało na none. Trzeba zrobić by sprawdzało po rozdzielczości ekranu czy jest to strona na telefonie, wtedy ustawić.*/
 	}
 }
