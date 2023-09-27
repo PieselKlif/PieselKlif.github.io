@@ -11,6 +11,8 @@ function toggleMenu() {
 	}
 }
 
+// TODO naprawic lewy panel na telefonach
+
 // if (screen.width <= 700)
 // {
 // 	document.getElementById("left-panel").style.display = "none";
