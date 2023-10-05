@@ -35,8 +35,9 @@ html, body {
 	background-color: #13171d;
 	border-radius: 5px;
 	cursor: pointer;
-	padding: 16px 7px;
+	padding: 2px 7px;
 	float: left;
+	font-size: 25px;
 
 	position: absolute;
 	left: 10px;
@@ -90,8 +91,9 @@ html, body {
 	color: #fff;
 }
 
-.panel-button-active i, .panel-button i {
+.panel-button-active ion-icon, .panel-button ion-icon {
 	position: absolute;
+	margin-top: 9px;
 	left: 28px;
 }
 
