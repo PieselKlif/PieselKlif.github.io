@@ -1,0 +1,14 @@
+.page-home-box {
+	text-align: center;
+	float: left;
+	padding: 8px 18px;
+}
+
+.page-home-box img {
+	height: 50px;
+	width: auto;
+}
+
+.page-home-box a {
+	color: white;
+}
