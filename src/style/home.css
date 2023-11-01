@@ -1,0 +1,8 @@
+.page-home-box {
+	background-color: rgb(24, 27, 46);
+	padding: 2px 20px;
+	margin: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	overflow-wrap: break-all;
+}
