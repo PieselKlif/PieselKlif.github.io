@@ -1,14 +1,29 @@
-.page-home-box {
+.social-link-box {
+	text-decoration: inherit;
+	color: inherit;
+	background-color: rgb(24, 27, 46);
+	display: flex;
+	padding: 7px 12px 0px 12px;
+	border-radius: 10px;
 	text-align: center;
+	width: fit-content;
 	float: left;
-	padding: 8px 18px;
+	margin: 8px;
+	user-select: none;
+
+	transition: 0.6s;
+
+	margin-bottom: 20px;
 }
 
-.page-home-box img {
-	height: 50px;
-	width: auto;
+.social-link-box:hover {
+	background-color: rgb(34, 39, 66);
+
+	border-radius: 15px;
 }
 
-.page-home-box a {
-	color: white;
+.social-link-box img {
+	float: left;
+	width: 70px;
+	margin-bottom: 10px;
 }
