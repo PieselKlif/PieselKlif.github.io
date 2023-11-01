@@ -26,6 +26,8 @@ function toggleMenu() {
 	}
 }
 
+// TODO jak się będzie na pc otwierało stronę to zrobić b lewyy panel nie otwierał się przy zmianie karty
+
 if (screen.width <= 700)
 {
 	isPhone = true;
