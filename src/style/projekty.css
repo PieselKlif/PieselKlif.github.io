@@ -1,7 +1,9 @@
+@import url(/src/style/colors.css);
+
 .folder {
 	text-decoration: inherit;
 	color: inherit;
-	background-color: rgb(24, 27, 46);
+	background-color: var(--panel);
 	display: flex;
 	padding: 0 10px;
 	border-radius: 10px;
@@ -12,7 +14,7 @@
 }
 
 .folder:hover {
-	background-color: rgb(34, 39, 66);
+	background-color: var(--highlight-panel);
 
 	border-radius: 15px;
 }

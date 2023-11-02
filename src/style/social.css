@@ -1,7 +1,9 @@
+@import url(/src/style/colors.css);
+
 .social-link-box {
 	text-decoration: inherit;
 	color: inherit;
-	background-color: rgb(24, 27, 46);
+	background-color: var(--panel);
 	display: flex;
 	padding: 7px 12px 0px 12px;
 	border-radius: 10px;
@@ -17,7 +19,7 @@
 }
 
 .social-link-box:hover {
-	background-color: rgb(34, 39, 66);
+	background-color: var(--highlight-panel);
 
 	border-radius: 15px;
 }

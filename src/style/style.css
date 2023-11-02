@@ -1,17 +1,18 @@
 /* TODO zrobic kolory na zmiennych */
+@import url(/src/style/colors.css);
 
 html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	background-color: #090c10;
-	color: white;
+	background-color: var(--main-background);
+	color: var(--text);
 	display: flex;
 }
 
 .left-panel {
-	background-color: #0d1117;
+	background-color: var(--secound-background);
 	text-align: center;
 	min-width: 300px;
 	float: left;
@@ -27,7 +28,7 @@ html, body {
 }
 
 .left-panel.desktop {
-		background-color: #0d1117;
+	background-color: var(--secound-background);
 	text-align: center;
 	min-width: 300px;
 	float: left;
@@ -47,7 +48,7 @@ html, body {
 }
 
 .menu-button {
-	background-color: #13171d;
+	background-color: var(--secound-background);
 	border-radius: 5px;
 	cursor: pointer;
 	padding: 5px 7px 2px 7px;
@@ -62,7 +63,7 @@ html, body {
 }
 
 .menu-button:hover {
-	background-color: #1c2129;
+	background-color: var(--highlight-secound-background);
 }
 
 .prof {
@@ -72,7 +73,7 @@ html, body {
 }
 
 .panel-button-active {
-	background-color: #090c10;
+	background-color: var(--main-background);
 	margin: 10px;
 	display: flex;
 	justify-content: center;
@@ -92,14 +93,14 @@ html, body {
 	color: inherit;
 	text-decoration: inherit;
 
-	color: #a7a7a7;
+	color: var(--hidden-text);
 
 	transition: 0.5s;
 }
 
 .panel-button:hover {
-	background-color: #13171d;
-	color: #fff;
+	background-color: var(--highlight-secound-background);
+	color: var(--text);
 }
 
 .panel-button-active ion-icon, .panel-button ion-icon {
@@ -135,19 +136,19 @@ html, body {
 	color: inherit;
 	text-decoration: inherit;
 
-	background-color: #0d1117;
+	background-color: var(--secound-background);
 	padding: 7px 9px;
 	margin: 0px 5px;
 	border-radius: 7px;
 
 	transition: 0.2s;
 
-	color: #d3d3d3;
+	color: var(--hidden-text);
 }
 
 .page-link:hover {
-	background-color: #13171d;
-	color: #fff;
+	background-color: var(--highlight-secound-background);
+	color: var(--text);
 }
 
 .page-link-bar {

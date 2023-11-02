@@ -1,5 +1,7 @@
+@import url(/src/style/colors.css);
+
 .kontakt-box {
-	background-color: rgb(24, 27, 46);
+	background-color: var(--panel);
 	border-radius: 15px;
 	padding: 10px;
 	padding-bottom: 15px;
