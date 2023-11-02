@@ -1,5 +1,14 @@
-var menuIsOpen = true;
 var isPhone = false;
+
+function desktop() {
+	document.getElementById("left-panel").classList.add('desktop');
+	document.getElementById("left-panel").classList.remove('close');
+	if (!isPhone)
+	{
+		document.getElementById("content").classList.add('desktop');
+		document.getElementById("content").classList.remove('full');
+	}
+}
 
 function openPanel() {
 	document.getElementById("left-panel").classList.remove('close');
@@ -11,9 +20,11 @@ function openPanel() {
 
 function closePanel() {
 	document.getElementById("left-panel").classList.add('close');
+	document.getElementById("left-panel").classList.remove('desktop');
 	if (!isPhone)
 	{
 		document.getElementById("content").classList.add('full');
+		document.getElementById("content").classList.remove('desktop');
 	}
 }
 
@@ -26,13 +37,11 @@ function toggleMenu() {
 	}
 }
 
-// TODO jak się będzie na pc otwierało stronę to zrobić b lewyy panel nie otwierał się przy zmianie karty
-
 if (screen.width <= 700)
 {
 	isPhone = true;
 } else {
-	openPanel()
+	desktop()
 }
 
 document.getElementById("menu-button").addEventListener("click", toggleMenu);
