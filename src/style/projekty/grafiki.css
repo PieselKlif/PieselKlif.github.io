@@ -55,5 +55,6 @@
 	position: fixed;
 	right: 0;
 	margin: 10px;
+	margin-right: 20px;
 	cursor: pointer;
 }
