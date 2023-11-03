@@ -26,6 +26,26 @@ html, body {
 	transition: 1s;
 }
 
+.left-panel img {
+	transform: scale(1);
+
+	transition: 0.5s;
+}
+
+.left-panel img:hover {
+	transform: scale(1.1);
+}
+
+.left-panel h1 {
+	transform: scale(1);
+
+	transition: 0.5s;
+}
+
+.left-panel h1:hover {
+	transform: scale(1.1);
+}
+
 .left-panel.desktop {
 	background-color: var(--secound-background);
 	text-align: center;
