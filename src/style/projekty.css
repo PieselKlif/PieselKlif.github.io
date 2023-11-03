@@ -21,6 +21,10 @@
 
 .folder ion-icon {
 	float: left;
-	margin-top: 20px;
+	margin-top: 16px;
 	margin-right: 15px;
+}
+
+.folder h2 {
+	margin-left: 47px;
 }
