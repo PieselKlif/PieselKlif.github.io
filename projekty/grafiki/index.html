@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/src/style/style.css">
-	<link rel="stylesheet" type="text/css" href="/src/style/projekty/grafiki.css">
-	<link rel="icon" type="image/x-icon" href="/src/icon/icon.png">
-	<title>PieselKlif</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/src/style/style.css">
+		<link rel="stylesheet" type="text/css" href="/src/style/projekty/grafiki.css">
+		<link rel="icon" type="image/x-icon" href="/src/icon/icon.png">
+		<title>PieselKlif</title>
+		
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</head>
+	<body>
+		<!-- IMG VIEWER -->
+		<div class="img-viewer close-viewer" id="img-viewer">
+			<a class="close-img-viewer" id="close-img-viewer">
+				<ion-icon name="close-outline" size="large"></ion-icon>
+			</a>
+			<img id="img-viewer-img" src="">
+		</div>
 
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-	<div class="left-panel close" id="left-panel">
+		<!-- MAIN WEB -->
+		<div class="left-panel close" id="left-panel">
 		<img src="/src/media/prof.png" class="prof">
 		<h1>PieselKlif</h1>
 
@@ -47,15 +56,44 @@
 			<a class="page-link" href="/projekty/grafiki/">grafiki</a>
 			/
 		</div>
-
-		<a class="img-panel">
+		<!-- WEB CONNTENT -->
+		
+		<a class="img-panel" id="open-img-1">
 			<img src="/projekty/grafiki/media/baner PieselKlif.jpg">
 		</a>
-		<a class="img-panel">
-			<img src="/projekty/grafiki/media/baner PieselKlif.jpg">
+		<a class="img-panel" id="open-img-2">
+			<img src="/projekty/grafiki/media/Harry Potter i nieznana blizna.jpg">
+		</a>
+		<a class="img-panel" id="open-img-3">
+			<img src="/projekty/grafiki/media/króliczek gotowe.png">
+		</a>
+		<a class="img-panel" id="open-img-4">
+			<img src="/projekty/grafiki/media/live miniaturka.png">
+		</a>
+		<a class="img-panel" id="open-img-5">
+			<img src="/projekty/grafiki/media/lowpoly.png">
+		</a>
+		<a class="img-panel" id="open-img-6">
+			<img src="/projekty/grafiki/media/luxongrafika.png">
+		</a>
+		<a class="img-panel" id="open-img-7">
+			<img src="/projekty/grafiki/media/miniatura.png">
+		</a>
+		<a class="img-panel" id="open-img-8">
+			<img src="/projekty/grafiki/media/overlay.png">
+		</a>
+		<a class="img-panel" id="open-img-9">
+			<img src="/projekty/grafiki/media/piesel 2.png">
+		</a>
+		<a class="img-panel" id="open-img-10">
+			<img src="/projekty/grafiki/media/piesel ikona.png">
+		</a>
+		<a class="img-panel" id="open-img-11">
+			<img src="/projekty/grafiki/media/piesel trójkąty 2.png">
 		</a>
 	</div>
 
+	<script src="/src/js/grafiki.js"></script>
 	<script src="/src/js/main.js"></script>
 </body>
 </html>
