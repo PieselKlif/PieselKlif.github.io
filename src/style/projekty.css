@@ -17,6 +17,8 @@
 	background-color: var(--highlight-panel);
 
 	border-radius: 15px;
+
+	transform: scale(1.02);
 }
 
 .folder ion-icon {
