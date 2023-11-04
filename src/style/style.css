@@ -24,6 +24,8 @@ html, body {
 	position: fixed;
 
 	transition: 1s;
+
+	z-index: 1;
 }
 
 .left-panel img {
@@ -79,6 +81,8 @@ html, body {
 	top: 10px;
 
 	transition: 0.2s;
+
+	z-index: 2;
 }
 
 .menu-button:hover {
