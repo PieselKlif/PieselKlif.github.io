@@ -1,0 +1,19 @@
+@import url(/src/style/colors.css);
+
+.web-panel {
+	background-color: var(--panel);
+	display: block;
+	padding: 3px 15px;
+	border-radius: 15px;
+	color: inherit;
+	text-decoration: inherit;
+	float: left;
+	margin: 10px;
+
+	transition: 0.5s;
+}
+
+.web-panel:hover {
+	background-color: var(--highlight-panel);
+	transform: scale(1.02);
+}

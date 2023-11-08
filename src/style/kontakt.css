@@ -1,0 +1,26 @@
+@import url(/src/style/colors.css);
+
+.kontakt-box {
+	background-color: var(--panel);
+	border-radius: 15px;
+	padding: 10px;
+	padding-bottom: 15px;
+	margin: 10px;
+	float: left;
+	width: 200px;
+}
+
+.kontakt-box .line {
+	background-color: white;
+	width: 1px;
+	height: 30px;
+	margin-top: 18px;
+	margin-right: 9px;
+	float: left;
+}
+
+.kontakt-box ion-icon {
+	float: left;
+	margin-top: 17px;
+	margin-right: 10px;
+}
