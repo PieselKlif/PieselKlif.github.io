@@ -3,7 +3,7 @@ function close_viewer() {
 }
 
 function open_viewer(event) {
-	var img_src = event.currentTarget.querySelector("img").src;
+	var img_src = event.currentTarget.getAttribute("data-text");
 
 	document.getElementById("img-viewer-img").src = img_src;
 	document.getElementById("img-viewer").classList.remove("close-viewer");
