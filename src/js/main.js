@@ -37,6 +37,7 @@ function toggleMenu() {
 	}
 }
 
+// TODO zrobić to w css
 if (screen.width <= 700)
 {
 	isPhone = true;
