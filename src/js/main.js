@@ -1,15 +1,5 @@
 var isPhone = false;
 
-function desktop() {
-	document.getElementById("left-panel").classList.add('desktop');
-	document.getElementById("left-panel").classList.remove('close');
-	if (!isPhone)
-	{
-		document.getElementById("content").classList.add('desktop');
-		document.getElementById("content").classList.remove('full');
-	}
-}
-
 function openPanel() {
 	document.getElementById("left-panel").classList.remove('close');
 	if (!isPhone)
@@ -35,13 +25,6 @@ function toggleMenu() {
 	}else{
 		closePanel()
 	}
-}
-
-if (screen.width <= 700)
-{
-	isPhone = true;
-} else {
-	desktop()
 }
 
 document.getElementById("menu-button").addEventListener("click", toggleMenu);

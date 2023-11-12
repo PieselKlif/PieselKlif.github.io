@@ -26,6 +26,8 @@ html, body {
 	transition: 1s;
 
 	z-index: 1;
+
+	left: -300px;
 }
 
 .left-panel img {
@@ -48,22 +50,8 @@ html, body {
 	transform: scale(1.1);
 }
 
-.left-panel.desktop {
-	background-color: var(--secound-background);
-	text-align: center;
-	min-width: 300px;
-	float: left;
-	left: 0px;
-	top: 0;
-	bottom: 0;
-
-	top: 0;
-	bottom: 0px;
-	position: fixed;
-}
-
 .left-panel.close {
-	left: -300px;
+	left: 0px;
 
 	transition: 1s;
 }
@@ -140,20 +128,13 @@ html, body {
 	padding: 5px 25px;
 	display:inline-block;
 
-	margin-left: 300px;
+	margin-left: 0px;
 
 	transition: 1s;
 }
 
-.content.desktop {
-	padding: 5px 25px;
-	display:inline-block;
-
-	margin-left: 300px;
-}
-
 .content.full {
-	margin-left: 0px;
+	margin-left: 300px;
 
 	transition: 1s;
 }
@@ -184,10 +165,34 @@ html, body {
 
 @media only screen and (max-width: 700px){
 	.left-panel {
+		background-color: var(--secound-background);
+		text-align: center;
 		width: 100%;
+		float: left;
+		left: 0px;
+		top: 0;
+		bottom: 0;
+	
+		top: 0;
+		bottom: 0px;
+		position: fixed;
+	
+		transition: 1s;
+	
+		z-index: 1;
 	}
 
 	.left-panel.close {
 		left: -100%;
+
+		transition: 1s;
+	}
+	
+	.content.full {
+		padding: 5px 25px;
+		display:inline-block;
+		margin-left: 0px;
+	
+		transition: 1s;
 	}
 }
