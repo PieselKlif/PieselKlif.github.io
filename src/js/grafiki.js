@@ -1,4 +1,5 @@
 function close_viewer() {
+	document.getElementById("img-viewer-img").src = "";
 	document.getElementById("img-viewer").classList.add("close-viewer");
 }
 
