@@ -9,6 +9,7 @@
 	text-decoration: inherit;
 	float: left;
 	margin: 10px;
+	width: 400px;
 
 	transition: 0.5s;
 }
@@ -16,4 +17,10 @@
 .web-panel:hover {
 	background-color: var(--highlight-panel);
 	transform: scale(1.02);
+}
+
+@media only screen and (max-width: 700px){
+	.web-panel {
+		width: auto;
+	}
 }
