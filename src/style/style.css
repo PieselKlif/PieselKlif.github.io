@@ -163,6 +163,17 @@ html, body {
 	margin-bottom: 40px;
 }
 
+.lined::before {
+	content: "";
+	background-color: white;
+	position: relative;
+	bottom: 5px;
+	width: 1px;
+	height: 35px;
+	margin-right: 9px;
+	float: left;
+}
+
 @media only screen and (max-width: 700px){
 	.left-panel {
 		background-color: var(--secound-background);
