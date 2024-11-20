@@ -96,6 +96,7 @@ nav a {
   border-right: #3d444d 1px solid;
   padding: 10px 20px;
   cursor: pointer;
+  user-select: none;
 }
 nav a.active {
   background-color: #151b23;
@@ -114,7 +115,6 @@ main section {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-column-gap: 1rem;
-  margin-bottom: 2rem;
   transition: opacity 0.5s, transform 0.5s;
   opacity: 1;
   transform: translateY(0);
@@ -126,6 +126,7 @@ main section .panel {
   padding: 1.5rem;
   border-radius: 15px;
   border: #3d444d 1px solid;
+  margin-bottom: 2rem;
 }
 main section:not(.active) {
   opacity: 0;
