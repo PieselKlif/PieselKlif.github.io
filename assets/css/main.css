@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  background-color: #010409;
+  color: #f0f6fc;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: linear-gradient(200deg, rebeccapurple 0%, rgb(153, 51, 153) 50%, rgb(68, 33, 102) 100%);
+  background-size: 400% 400%;
+  animation: bgAnim 30s ease infinite;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+header .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 10rem);
+  height: calc(100vh - 10rem);
+  margin: 5rem;
+  color: white;
+  z-index: 1;
+  columns: 100px 2;
+}
+header .content .prof {
+  margin: 100px;
+  margin-right: 10rem;
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+header .content .prof *:not(img) {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.8;
+  filter: blur(10px);
+}
+header .content .prof .ring:nth-child(1) {
+  width: 130px;
+  height: 130px;
+  top: -10px;
+  left: 90px;
+  background: linear-gradient(125deg, lightgreen, orange);
+  z-index: 2;
+}
+header .content .prof .ring:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  top: 80px;
+  left: 100px;
+  background: linear-gradient(95deg, red, pink);
+  z-index: 3;
+}
+header .content .prof .ring:nth-child(3) {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(-10deg, blue, aqua);
+  z-index: 1;
+}
+header .content .prof .ring:nth-child(4) {
+  width: 120px;
+  height: 120px;
+  top: 140px;
+  left: 40px;
+  background: linear-gradient(200deg, purple, palevioletred);
+  z-index: 4;
+}
+header .content .prof img {
+  position: absolute;
+  height: 200px;
+  z-index: 5;
+  border-radius: 100%;
+  top: 28px;
+  left: 35px;
+}
+
+main {
+  background-color: #010409;
+  z-index: 2;
+  position: relative;
+  padding: 2rem;
+  height: 100vh;
+}
+
+footer {
+  background-color: #0d1117;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+footer .license {
+  color: #3d444d;
+}
+footer .license a {
+  color: #3d444d;
+}
+footer .license a:hover {
+  color: rgb(91, 91, 187);
+}
+
+@keyframes bgAnim {
+  0% {
+    background-position: 80% 0%;
+  }
+  50% {
+    background-position: 25% 100%;
+  }
+  100% {
+    background-position: 80% 0%;
+  }
+}
