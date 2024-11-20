@@ -3,8 +3,8 @@
 body {
   margin: 0;
   background-color: $section;
-  color: $text;
   font-family: $font;
+  color: $text;
 }
 
 header {
@@ -49,7 +49,7 @@ header {
       }
 
       .ring {
-				animation: blink 15s ease infinite;
+        animation: blink 15s ease infinite;
 
         &:nth-child(1) {
           width: 130px;
@@ -68,7 +68,7 @@ header {
           background: linear-gradient(95deg, red, pink);
           z-index: 3;
 
-					animation-delay: -4s;
+          animation-delay: -4s;
         }
 
         &:nth-child(3) {
@@ -77,7 +77,7 @@ header {
           background: linear-gradient(-10deg, blue, aqua);
           z-index: 1;
 
-					animation-delay: -7s;
+          animation-delay: -7s;
         }
 
         &:nth-child(4) {
@@ -88,7 +88,7 @@ header {
           background: linear-gradient(200deg, purple, palevioletred);
           z-index: 4;
 
-					animation-delay: -13s;
+          animation-delay: -13s;
         }
       }
 
@@ -104,12 +104,48 @@ header {
   }
 }
 
+nav {
+	background-color: $section;
+	position: relative;
+	display: flex;
+	z-index: 1;
+
+	a {
+		transition: background-color 0.15s;
+		border-right: $border;
+		padding: 10px 20px;
+		cursor: pointer;
+
+		&.active {
+			background-color: $panel;
+		}
+
+		&:hover {
+			background-color: $panel;
+		}
+	}
+}
+
 main {
   background-color: $background;
-  z-index: 2;
   position: relative;
-  padding: 2rem;
-  height: 100vh;
+  z-index: 2;
+	padding: 2rem;
+
+	section {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-column-gap: 1rem;
+		margin-bottom: 2rem;
+
+		.panel {
+			background-color: $section;
+			padding: 1.5rem;
+			border-radius: 15px;
+			border: $border;
+		}
+	}
+
 }
 
 footer {
@@ -118,7 +154,7 @@ footer {
   position: relative;
   text-align: center;
   padding: 1rem;
-	border-top: $border;
+  border-top: $border;
 
   .license {
     color: $shadowedText;
@@ -146,13 +182,13 @@ footer {
 }
 
 @keyframes blink {
-	0% {
-		transform: scale(1.0);
-	}
-	50% {
-		transform: scale(1.2);
-	}
-	100% {
-		transform: scale(1.0);
-	}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

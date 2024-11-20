@@ -2,8 +2,8 @@
 body {
   margin: 0;
   background-color: #0d1117;
-  color: #f0f6fc;
   font-family: "Poppins", sans-serif;
+  color: #f0f6fc;
 }
 
 header {
@@ -85,12 +85,42 @@ header .content .prof img {
   left: 35px;
 }
 
+nav {
+  background-color: #0d1117;
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+nav a {
+  transition: background-color 0.15s;
+  border-right: #3d444d 1px solid;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+nav a.active {
+  background-color: #151b23;
+}
+nav a:hover {
+  background-color: #151b23;
+}
+
 main {
   background-color: #010409;
-  z-index: 2;
   position: relative;
+  z-index: 2;
   padding: 2rem;
-  height: 100vh;
+}
+main section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1rem;
+  margin-bottom: 2rem;
+}
+main section .panel {
+  background-color: #0d1117;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: #3d444d 1px solid;
 }
 
 footer {
