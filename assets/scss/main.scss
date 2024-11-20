@@ -49,6 +49,8 @@ header {
       }
 
       .ring {
+				animation: blink 15s ease infinite;
+
         &:nth-child(1) {
           width: 130px;
           height: 130px;
@@ -65,6 +67,8 @@ header {
           left: 100px;
           background: linear-gradient(95deg, red, pink);
           z-index: 3;
+
+					animation-delay: -4s;
         }
 
         &:nth-child(3) {
@@ -72,6 +76,8 @@ header {
           height: 200px;
           background: linear-gradient(-10deg, blue, aqua);
           z-index: 1;
+
+					animation-delay: -7s;
         }
 
         &:nth-child(4) {
@@ -81,6 +87,8 @@ header {
           left: 40px;
           background: linear-gradient(200deg, purple, palevioletred);
           z-index: 4;
+
+					animation-delay: -13s;
         }
       }
 
@@ -134,4 +142,16 @@ footer {
   100% {
     background-position: 80% 0%;
   }
+}
+
+@keyframes blink {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1.0);
+	}
 }

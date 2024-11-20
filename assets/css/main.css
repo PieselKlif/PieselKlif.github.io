@@ -40,6 +40,9 @@ header .content .prof *:not(img) {
   opacity: 0.8;
   filter: blur(10px);
 }
+header .content .prof .ring {
+  animation: blink 15s ease infinite;
+}
 header .content .prof .ring:nth-child(1) {
   width: 130px;
   height: 130px;
@@ -55,12 +58,14 @@ header .content .prof .ring:nth-child(2) {
   left: 100px;
   background: linear-gradient(95deg, red, pink);
   z-index: 3;
+  animation-delay: -4s;
 }
 header .content .prof .ring:nth-child(3) {
   width: 200px;
   height: 200px;
   background: linear-gradient(-10deg, blue, aqua);
   z-index: 1;
+  animation-delay: -7s;
 }
 header .content .prof .ring:nth-child(4) {
   width: 120px;
@@ -69,6 +74,7 @@ header .content .prof .ring:nth-child(4) {
   left: 40px;
   background: linear-gradient(200deg, purple, palevioletred);
   z-index: 4;
+  animation-delay: -13s;
 }
 header .content .prof img {
   position: absolute;
@@ -113,5 +119,16 @@ footer .license a:hover {
   }
   100% {
     background-position: 80% 0%;
+  }
+}
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
