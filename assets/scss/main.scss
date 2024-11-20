@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-color: $background;
+  background-color: $section;
   color: $text;
   font-family: $font;
 }
@@ -118,6 +118,7 @@ footer {
   position: relative;
   text-align: center;
   padding: 1rem;
+	border-top: $border;
 
   .license {
     color: $shadowedText;
