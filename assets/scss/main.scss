@@ -108,11 +108,14 @@ nav {
 	background-color: $section;
 	position: relative;
 	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 	z-index: 1;
 
 	a {
 		transition: background-color 0.15s;
 		border-right: $border;
+    border-left: $border;
 		padding: 10px 20px;
 		cursor: pointer;
 		user-select: none;
