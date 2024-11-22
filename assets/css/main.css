@@ -120,6 +120,7 @@ main section {
 }
 main section.social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 main section.social a {
