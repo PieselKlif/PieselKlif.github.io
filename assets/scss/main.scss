@@ -168,7 +168,27 @@ main {
       }
     }
 
-    &:not(.social) {
+    &.graf {
+      columns: 0 4;
+
+      img {
+        width: 20vw;
+        background-color: $panel;
+        padding: 0.5vw;
+        border-radius: 10px;
+        margin: 5px;
+        cursor: pointer;
+
+        transition: 0.1s;
+
+        &:hover {
+          border-radius: 5px;
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    &:not(.social):not(.graf) {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-gap: 1rem;
@@ -222,6 +242,32 @@ footer {
         color: $hoverLink;
       }
     }
+  }
+}
+
+#graf-view {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba($color: $background, $alpha: 0.5);
+  z-index: 3;
+  justify-content: center;
+
+  &.close {
+    display: none;
+  }
+  
+  ion-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  img {
+    align-self: center;
+    height: 70vh;
   }
 }
 

@@ -142,22 +142,38 @@ main section.social a:hover {
   background-color: var(--color);
   color: #f0f6fc;
 }
-main section:not(.social) {
+main section.graf {
+  columns: 0 4;
+}
+main section.graf img {
+  width: 20vw;
+  background-color: #151b23;
+  padding: 0.5vw;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+main section.graf img:hover {
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+main section:not(.social):not(.graf) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
 }
-main section:not(.social) .panel {
+main section:not(.social):not(.graf) .panel {
   background-color: #0d1117;
   padding: 1.5rem;
   border-radius: 15px;
   border: #3d444d 1px solid;
   margin-bottom: 2rem;
 }
-main section:not(.social) .panel a {
+main section:not(.social):not(.graf) .panel a {
   color: #f0f6fc;
 }
-main section:not(.social) .panel a:hover {
+main section:not(.social):not(.graf) .panel a:hover {
   color: rgb(91, 91, 187);
 }
 main section:not(.active) {
@@ -187,6 +203,29 @@ footer .license a {
 }
 footer .license a:hover {
   color: rgb(91, 91, 187);
+}
+
+#graf-view {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(1, 4, 9, 0.5);
+  z-index: 3;
+  justify-content: center;
+}
+#graf-view.close {
+  display: none;
+}
+#graf-view ion-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+#graf-view img {
+  align-self: center;
+  height: 70vh;
 }
 
 @keyframes bgAnim {
