@@ -172,9 +172,12 @@ main section:not(.social):not(.graf) .panel {
 }
 main section:not(.social):not(.graf) .panel a {
   color: #f0f6fc;
+  margin-left: 5px;
+  transition: 0.1s margin-left;
 }
 main section:not(.social):not(.graf) .panel a:hover {
   color: rgb(91, 91, 187);
+  margin-left: 10px;
 }
 main section:not(.active) {
   opacity: 0;

@@ -202,9 +202,13 @@ main {
   
         a {
           color: $text;
+          margin-left: 5px;
   
+          transition: 0.1s margin-left;
+
           &:hover {
             color: $hoverLink;
+            margin-left: 10px;
           }
         }
       }
