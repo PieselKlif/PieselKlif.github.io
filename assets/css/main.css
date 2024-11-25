@@ -158,24 +158,63 @@ main section.graf img:hover {
   border-radius: 5px;
   transform: scale(1.05);
 }
-main section:not(.social):not(.graf) {
+main section.games span {
+  margin-bottom: 20px;
+  display: block;
+  font-size: larger;
+}
+main section.games span a {
+  color: #f0f6fc;
+}
+main section.games span a:hover {
+  color: rgb(91, 91, 187);
+}
+main section.games .content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
 }
-main section:not(.social):not(.graf) .panel {
+main section.games .content .panel {
+  display: flex;
+  color: #f0f6fc;
+  text-decoration: none;
+  flex-direction: column;
+  background-color: #0d1117;
+  border: #3d444d 1px solid;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+main section.games .content .panel img {
+  height: 7rem;
+  align-self: center;
+}
+main section.games .content .panel div {
+  background-color: #151b23;
+  padding: 10px;
+  padding-top: 0;
+  height: 100%;
+}
+main section.games .content .panel:hover {
+  transform: scale(1.05);
+}
+main section.col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+main section.col .panel {
   background-color: #0d1117;
   padding: 1.5rem;
   border-radius: 15px;
   border: #3d444d 1px solid;
   margin-bottom: 2rem;
 }
-main section:not(.social):not(.graf) .panel a {
+main section.col .panel a {
   color: #f0f6fc;
   margin-left: 5px;
   transition: 0.1s margin-left;
 }
-main section:not(.social):not(.graf) .panel a:hover {
+main section.col .panel a:hover {
   color: rgb(91, 91, 187);
   margin-left: 10px;
 }

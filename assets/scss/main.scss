@@ -188,7 +188,58 @@ main {
       }
     }
 
-    &:not(.social):not(.graf) {
+    &.games {
+
+      span {
+        margin-bottom: 20px;
+        display: block;
+        font-size: larger;
+
+        a {
+          color: $text;
+
+          &:hover {
+            color: $hoverLink;
+          }
+        }
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
+  
+        .panel {
+          display: flex;
+          color: $text;
+          text-decoration: none;
+          flex-direction: column;
+          background-color: $section;
+          border: $border;
+          border-radius: 5px;
+  
+          transition: 0.1s;
+  
+          img {
+            height: 7rem;
+            align-self: center;
+          }
+  
+          div {
+            background-color: $panel;
+            padding: 10px;
+            padding-top: 0;
+            height: 100%;
+          }
+  
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+
+    &.col {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-gap: 1rem;
@@ -212,7 +263,6 @@ main {
           }
         }
       }
-  
     }
 
     &:not(.active) {
