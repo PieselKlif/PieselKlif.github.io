@@ -173,6 +173,16 @@ main {
     }
 
     &.graf {
+      @media screen and (max-width: $phoneMax) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          width: 85vw !important;
+        }
+      }
+
       columns: 0 4;
 
       img {
@@ -360,6 +370,11 @@ footer {
   img {
     align-self: center;
     height: 70vh;
+
+    @media screen and (max-width: $phoneMax) {
+      width: 90vw;
+      height: auto !important;
+    }
   }
 }
 
