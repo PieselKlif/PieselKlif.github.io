@@ -158,6 +158,33 @@ main section.graf img:hover {
   border-radius: 5px;
   transform: scale(1.05);
 }
+main section.mess {
+  display: flex;
+  justify-content: center;
+}
+main section.mess li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+main section.mess li a {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  color: #f0f6fc;
+  text-decoration: none;
+}
+main section.mess li a ion-icon {
+  margin-right: 15px;
+  font-size: 2em;
+  transition: 0.2s;
+}
+main section.mess li a:hover {
+  color: rgb(91, 91, 187);
+}
+main section.mess li a:hover ion-icon {
+  transform: scale(1.2);
+  margin-right: 25px;
+}
 main section.games span {
   margin-bottom: 20px;
   display: block;
