@@ -1,76 +1,305 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/src/style/style.css">
-	<link rel="stylesheet" href="/src/style/home.css">
-	<link rel="icon" type="image/x-icon" href="/src/icon/icon.png">
-	<title>PieselKlif</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piesel Klif</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
 
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-	<div class="left-panel close" id="left-panel">
-		<img src="/src/media/prof.png" class="prof">
-		<h1>PieselKlif</h1>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/js/app.js" defer></script>
 
-		<a class="panel-button-active" href="/">
-			<p>Home</p>
-			<ion-icon size="large" name="home-outline"></ion-icon>
-		</a>
-		<a class="panel-button" href="/social/">
-			<p>Social</p>
-			<ion-icon size="large" name="phone-portrait-outline"></ion-icon>
-		</a>
-		<a class="panel-button" href="/projekty/">
-			<p>Projekty</p>
-			<ion-icon size="large" name="albums-outline"></ion-icon>
-		</a>
-		<a class="panel-button" href="/kontakt/">
-			<p>Kontakt</p>
-			<ion-icon size="large" name="call-outline"></ion-icon>
-		</a>
-	</div>
-	<div class="content full" id="content">
-		<a class="menu-button" id="menu-button">
-			<ion-icon name="menu-outline"></ion-icon>
-		</a>
-		<h1 style="margin-top: 50px;">Home</h1>
-		<div class="page-link-bar">
-			/
-			<a class="page-link" href="/">home</a>
-			/
-		</div>
-		
-		<div class="page-home-box">
-			<h3>Co to?</h3>
-			<p>Jest to moja strona, na której są przedstawione wszystkie moje prace. Odnajdziesz również dane kontaktowe do mnie.</p>
-		</div>
-		<div class="page-home-box">
-			<h3>Kim jestem?</h3>
-			<p>Jestem Pieseł Klif. Czemu taka nazwa? W sumie nie pamiętam.</p>
-			<p>Lubię czasem coś zrobić swojego, dlatego robię czasem strony lub czasem jakąś grę, lub grafikę.</p>
-		</div>
-		<div class="page-home-box">
-			<h3>Programujesz?</h3>
-			<p>Czasem. Nie jestem w tym profesjonalistą ani nie robię tego zawodowo. Robię to dla zabawy lub jak coś potrzebuję.</p>
-			<p>Możesz zobaczyć też, jak ta strona powstawała, patrząc na commity na GitHub, one nie są profesjonalne.</p>
-		</div>
-		<div class="page-home-box">
-			<h3>Czym się zajmujesz?</h3>
-			<p>W sumie to zajmuje się na co dzień wszystkim związanym z komputerami.</p>
-		</div>
-		<div class="page-home-box">
-			<h3>Cytat</h3>
-			<blockquote style="text-align: center;" cite="https://quotefancy.com/quote/1445774/Linus-Torvalds-A-computer-is-like-air-conditioning-it-becomes-useless-when-you-open">
-				<p>“A computer is like air conditioning – it becomes useless when you open Windows.”
-					<i>— Linus Torvalds</i></p>
-			</blockquote>
-		</div>
-	</div>
-
-	<script src="/src/js/main.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div id="graf-view" style="display: none">
+      <ion-icon
+        id="close-img-viewer"
+        name="close-outline"
+        size="large"
+      ></ion-icon>
+      <img id="graf-viewer-img" src="" />
+    </div>
+    <header>
+      <div class="content">
+        <div>
+          <h1>Hej, to tutaj!</h1>
+          <p>
+            Dobrze trafiłeś/aś. Ta strona to początek naszej przygody – przewiń
+            niżej, żeby dowiedzieć się więcej o mnie i moich projektach.
+          </p>
+        </div>
+        <div class="prof">
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <img src="/assets/images/prof.png" alt="prof" />
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a class="active" data-target="section1">O mnie</a>
+      <a data-target="section2">Social</a>
+      <a data-target="section3">Projekty</a>
+      <a data-target="section4">Grafiki</a>
+      <a data-target="section5">Gry</a>
+      <a data-target="section6">Kontakt</a>
+    </nav>
+    <main>
+      <section id="section1" class="active col">
+        <div class="panel">
+          <h2>👤 Kim jestem?</h2>
+          <p>
+            Cześć! Nazywam się PieselKlif (to mój pseudonim), a programowanie to
+            moja pasja. Specjalizuję się w tworzeniu stron internetowych i
+            aplikacji, stale rozwijając swoje umiejętności w JavaScript, HTML, i
+            CSS (SCSS). Mam też doświadczenie w programowaniu w Pythonie,
+            tworzeniu botów na Discorda i pisaniu prostych programów.
+          </p>
+        </div>
+        <div class="panel">
+          <h2>🎯 Moja misja</h2>
+          <p>
+            Uwielbiam rozwiązywać problemy i realizować ciekawe projekty, które
+            łączą estetykę z funkcjonalnością. Moim celem jest tworzenie
+            rozwiązań, które wyróżniają się jakością i intuicyjnością.
+          </p>
+        </div>
+        <div class="panel">
+          <h2>💡 Co mnie inspiruje?</h2>
+          <p>
+            Inspiruje mnie ciągły rozwój. Każdy projekt to dla mnie nowe
+            wyzwanie, a każde wyzwanie to okazja do nauki i udoskonalenia swoich
+            umiejętności.
+          </p>
+        </div>
+      </section>
+      <section id="section2" class="social">
+        <a
+          target="_blank"
+          href="https://github.com/pieselklif"
+          style="--color: #020409"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/@pieselklif"
+          style="--color: #ec1a25"
+          ><ion-icon name="logo-youtube"></ion-icon
+        ></a>
+        <a
+          target="_blank"
+          href="https://twitter.com/PieselKlif"
+          style="--color: #4fa3f3"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.twitch.tv/piesel_klif"
+          style="--color: #9d0eff"
+          ><ion-icon name="logo-twitch"></ion-icon
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.tiktok.com/@piesel_klif"
+          style="--color: #000000"
+          ><ion-icon name="logo-tiktok"></ion-icon
+        ></a>
+        <a
+          target="_blank"
+          href="https://discord.com/users/398931363618881537"
+          style="--color: #6b50f1"
+          ><ion-icon name="logo-discord"></ion-icon
+        ></a>
+      </section>
+      <section id="section3" class="col">
+        <div class="panel">
+          <h2>🕸 Strony</h2>
+          <ol>
+            <li>
+              <a href="https://pieselklif.github.io/">PieselKlif.github.io</a>
+            </li>
+            <li><a href="https://zzswiki.github.io/">zzswiki.github.io</a></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h2>👨‍💻 Programy</h2>
+          <ol>
+            <li>
+              <a href="https://github.com/PieselKlif/discord-spotted"
+                >Discord spotted</a
+              >
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="section4" class="graf">
+        <img
+          data-target="baner PieselKlif.jpg"
+          src="/assets/images/grafika/small/baner PieselKlif.jpg"
+          alt=""
+        />
+        <img
+          data-target="Harry Potter i nieznana blizna.jpg"
+          src="/assets/images/grafika/small/Harry Potter i nieznana blizna.jpg"
+          alt=""
+        />
+        <img
+          data-target="króliczek gotowe.png"
+          src="/assets/images/grafika/small/króliczek gotowe.png"
+          alt=""
+        />
+        <img
+          data-target="live miniaturka.png"
+          src="/assets/images/grafika/small/live miniaturka.png"
+          alt=""
+        />
+        <img
+          data-target="lowpoly.png"
+          src="/assets/images/grafika/small/lowpoly.png"
+          alt=""
+        />
+        <img
+          data-target="luxongrafika.png"
+          src="/assets/images/grafika/small/luxongrafika.png"
+          alt=""
+        />
+        <img
+          data-target="miniatura.png"
+          src="/assets/images/grafika/small/miniatura.png"
+          alt=""
+        />
+        <img
+          data-target="overlay.png"
+          src="/assets/images/grafika/small/overlay.png"
+          alt=""
+        />
+        <img
+          data-target="piesel 2.png"
+          src="/assets/images/grafika/small/piesel 2.png"
+          alt=""
+        />
+        <img
+          data-target="piesel trójkąty 2.png"
+          src="/assets/images/grafika/small/piesel trójkąty 2.png"
+          alt=""
+        />
+        <img
+          data-target="prof.png"
+          src="/assets/images/grafika/small/prof.png"
+          alt=""
+        />
+      </section>
+      <section id="section5" class="games">
+        <span
+          >Wszystkie gry znajdują się na moim profilu na
+          <a href="https://pieselklif.itch.io/" target="_blank"
+            >itch.io</a
+          ></span
+        >
+        <div class="content">
+          <a
+            class="panel"
+            target="_blank"
+            href="https://pieselklif.itch.io/hard-scary"
+          >
+            <img src="/assets/images/games/+GDlqF.png" alt="Hard scary" />
+            <div>
+              <h2>Hard scary</h2>
+              <p>
+                Jest to bardzo straszna gra, która polega na przejściu prostego
+                labiryntu.
+              </p>
+            </div>
+          </a>
+          <a
+            class="panel"
+            target="_blank"
+            href="https://pieselklif.itch.io/tutmaze"
+          >
+            <img src="/assets/images/games/p0nRWy.png" alt="Tutmaze" />
+            <div>
+              <h2>Tutmaze</h2>
+              <p>
+                Ta gra została zrobiona na szybko specjalnie na tutjam. Polega
+                na przejściu podziemnego labiryntu.
+              </p>
+            </div>
+          </a>
+          <a
+            class="panel"
+            target="_blank"
+            href="https://pieselklif.itch.io/plants"
+          >
+            <img src="/assets/images/games/UNcibg.png" alt="Plants" />
+            <div>
+              <h2>Plants</h2>
+              <p>
+                Jedna z moich pierwszych gier. Sens gry jest prosty: sadzisz,
+                zbierasz, sprzedajesz.
+              </p>
+            </div>
+          </a>
+          <a
+            class="panel"
+            target="_blank"
+            href="https://pieselklif.itch.io/fat-runner"
+          >
+            <img src="/assets/images/games/V7VyjS.png" alt="Fat Runner" />
+            <div>
+              <h2>Fat Runner</h2>
+              <p>Gra polega na przejściu trasy w jak najszybszym czasie.</p>
+            </div>
+          </a>
+          <a
+            class="panel"
+            target="_blank"
+            href="https://pieselklif.itch.io/klif-clicker"
+          >
+            <img src="/assets/images/games/zzpO+j.png" alt="Klif Clicker" />
+            <div>
+              <h2>Klif Clicker</h2>
+              <p>Klikasz > sprzedajesz > kupujesz ulepszenie > klikasz</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="section6" class="mess">
+        <ul>
+          <li>
+            <a href="mailto:pieselklif@gmail.com">
+              <ion-icon name="mail"></ion-icon>
+              Napisz do mnie maila!
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.com/users/398931363618881537">
+              <ion-icon name="logo-discord"></ion-icon>
+              Napisz do mnie na discord!
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <span class="license"
+        >&copy; PieselKlif 2024, licensed under
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+          >CC BY-SA</a
+        ></span
+      >
+    </footer>
+  </body>
 </html>

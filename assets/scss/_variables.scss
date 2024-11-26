@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$font: "Poppins", sans-serif;
+
+$background: #010409;
+$border: #3d444d 1px solid;
+
+$phoneMax: 700px;
+
+// Sections
+$section: #0d1117;
+$panel: #151b23;
+
+// Text
+$shadowedText: #3d444d;
+$hoverLink: rgb(91, 91, 187);
+$text: #f0f6fc;
+
+// Gradient background
+$gradientBG: 200deg, rebeccapurple 0%, rgb(153, 51, 153) 50%, rgb(68, 33, 102) 100%;
+
+// bubbles
+$bubble1: 125deg, lightgreen, orange;
+$bubble2: 95deg, red, pink;
+$bubble3: -10deg, blue, aqua;
+$bubble4: 200deg, purple, palevioletred;
