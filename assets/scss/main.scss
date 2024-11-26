@@ -35,6 +35,10 @@ header {
     columns: 0 2;
 
     .prof {
+      @media screen and (max-width: $phoneMax) {
+        display: none;
+      }
+
       margin: 100px;
       margin-right: 10rem;
       position: relative;
