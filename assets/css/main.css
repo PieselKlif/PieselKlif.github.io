@@ -23,7 +23,7 @@ header .content {
   width: calc(100% - 10rem);
   height: calc(100vh - 10rem);
   margin: 5rem;
-  color: white;
+  color: #f0f6fc;
   z-index: 1;
   columns: 0 2;
 }

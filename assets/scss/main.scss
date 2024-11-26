@@ -8,12 +8,7 @@ body {
 }
 
 header {
-  background: linear-gradient(
-    200deg,
-    rebeccapurple 0%,
-    rgb(153, 51, 153) 50%,
-    rgb(68, 33, 102) 100%
-  );
+  background: linear-gradient($gradientBG);
   background-size: 400% 400%;
   animation: bgAnim 30s ease infinite;
 
@@ -30,7 +25,7 @@ header {
     width: calc(100% - 10rem);
     height: calc(100vh - 10rem);
     margin: 5rem;
-    color: white;
+    color: $text;
     z-index: 1;
     columns: 0 2;
 
@@ -60,7 +55,7 @@ header {
           height: 130px;
           top: -10px;
           left: 90px;
-          background: linear-gradient(125deg, lightgreen, orange);
+          background: linear-gradient($bubble1);
           z-index: 2;
         }
 
@@ -69,7 +64,7 @@ header {
           height: 150px;
           top: 80px;
           left: 100px;
-          background: linear-gradient(95deg, red, pink);
+          background: linear-gradient($bubble2);
           z-index: 3;
 
           animation-delay: -4s;
@@ -78,7 +73,7 @@ header {
         &:nth-child(3) {
           width: 200px;
           height: 200px;
-          background: linear-gradient(-10deg, blue, aqua);
+          background: linear-gradient($bubble3);
           z-index: 1;
 
           animation-delay: -7s;
@@ -89,7 +84,7 @@ header {
           height: 120px;
           top: 140px;
           left: 40px;
-          background: linear-gradient(200deg, purple, palevioletred);
+          background: linear-gradient($bubble4);
           z-index: 4;
 
           animation-delay: -13s;
