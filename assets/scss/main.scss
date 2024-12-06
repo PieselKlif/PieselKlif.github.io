@@ -5,6 +5,8 @@ body {
   background-color: $section;
   font-family: $font;
   color: $text;
+  line-height: 1.8em;
+  letter-spacing: 1px;
 }
 
 header {
@@ -16,6 +18,27 @@ header {
   height: 100vh;
   position: relative;
   z-index: 1;
+
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    animation: arrow infinite 1.5s ease;
+    opacity: 0.7;
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 0.8em;
+    }
+
+    ion-icon {
+      font-size: 3em;
+    }
+  }
 
   .content {
     display: flex;
@@ -30,15 +53,15 @@ header {
     columns: 0 2;
 
     .prof {
-      @media screen and (max-width: $phoneMax) {
-        display: none;
-      }
-
       margin: 100px;
       margin-right: 10rem;
       position: relative;
       height: 150px;
       width: 150px;
+      
+      @media screen and (max-width: $phoneMax) {
+        display: none;
+      }
 
       *:not(img) {
         position: absolute;
@@ -104,29 +127,29 @@ header {
 }
 
 nav {
-	background-color: $section;
-	position: relative;
-	display: flex;
+  background-color: $section;
+  position: relative;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-	z-index: 1;
+  z-index: 1;
 
-	a {
-		transition: background-color 0.15s;
-		border-right: $border;
+  a {
+    transition: background-color 0.15s;
+    border-right: $border;
     border-left: $border;
-		padding: 10px 20px;
-		cursor: pointer;
-		user-select: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
 
-		&.active {
-			background-color: $panel;
-		}
+    &.active {
+      background-color: $panel;
+    }
 
-		&:hover {
-			background-color: $panel;
-		}
-	}
+    &:hover {
+      background-color: $panel;
+    }
+  }
 }
 
 main {
@@ -141,7 +164,7 @@ main {
     transform: translateY(0);
     position: relative;
     z-index: 1;
-    
+
     &.social {
       display: flex;
       flex-wrap: wrap;
@@ -168,18 +191,8 @@ main {
     }
 
     &.graf {
-      @media screen and (max-width: $phoneMax) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img {
-          width: 85vw !important;
-        }
-      }
-
       columns: 0 4;
-
+      
       img {
         width: 20vw;
         background-color: $panel;
@@ -187,12 +200,22 @@ main {
         border-radius: 10px;
         margin: 5px;
         cursor: pointer;
-
+        
         transition: 0.1s;
-
+        
         &:hover {
           border-radius: 5px;
           transform: scale(1.05);
+        }
+      }
+
+      @media screen and (max-width: $phoneMax) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          width: 85vw !important;
         }
       }
     }
@@ -232,7 +255,6 @@ main {
     }
 
     &.games {
-
       span {
         margin-bottom: 20px;
         display: block;
@@ -251,7 +273,7 @@ main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 1rem;
-  
+
         .panel {
           display: flex;
           color: $text;
@@ -260,21 +282,21 @@ main {
           background-color: $section;
           border: $border;
           border-radius: 5px;
-  
+
           transition: 0.1s;
-  
+
           img {
             height: 7rem;
             align-self: center;
           }
-  
+
           div {
             background-color: $panel;
             padding: 10px;
             padding-top: 0;
             height: 100%;
           }
-  
+
           &:hover {
             transform: scale(1.05);
           }
@@ -286,18 +308,18 @@ main {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-gap: 1rem;
-  
+
       .panel {
         background-color: $section;
         padding: 1.5rem;
         border-radius: 15px;
         border: $border;
         margin-bottom: 2rem;
-  
+
         a {
           color: $text;
           margin-left: 5px;
-  
+
           transition: 0.1s margin-left;
 
           &:hover {
@@ -354,7 +376,7 @@ footer {
   &.close {
     display: none;
   }
-  
+
   ion-icon {
     position: absolute;
     right: 10px;
@@ -394,5 +416,17 @@ footer {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0;
   }
 }

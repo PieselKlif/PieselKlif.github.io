@@ -4,6 +4,8 @@ body {
   background-color: #0d1117;
   font-family: "Poppins", sans-serif;
   color: #f0f6fc;
+  line-height: 1.8em;
+  letter-spacing: 1px;
 }
 
 header {
@@ -14,6 +16,24 @@ header {
   height: 100vh;
   position: relative;
   z-index: 1;
+}
+header .arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  animation: arrow infinite 1.5s ease;
+  opacity: 0.7;
+}
+header .arrow p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+header .arrow ion-icon {
+  font-size: 3em;
 }
 header .content {
   display: flex;
@@ -150,16 +170,6 @@ main section.social a:hover {
 main section.graf {
   columns: 0 4;
 }
-@media screen and (max-width: 700px) {
-  main section.graf {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  main section.graf img {
-    width: 85vw !important;
-  }
-}
 main section.graf img {
   width: 20vw;
   background-color: #151b23;
@@ -172,6 +182,16 @@ main section.graf img {
 main section.graf img:hover {
   border-radius: 5px;
   transform: scale(1.05);
+}
+@media screen and (max-width: 700px) {
+  main section.graf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main section.graf img {
+    width: 85vw !important;
+  }
 }
 main section.mess {
   display: flex;
@@ -338,5 +358,16 @@ footer .license a:hover {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes arrow {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0;
   }
 }
