@@ -2,7 +2,7 @@
   <h3 align="center">Bartosz Warda — Personal Portfolio Website</h3>
 
   <p align="center">
-    Moja strona portfolio
+    Moja strona portfolio <a href="https://pieselklif.github.io/">pieselklif.github.io</a>
     <br />
     <br />
     <br />
