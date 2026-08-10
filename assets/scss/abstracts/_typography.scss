@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+$font-family-primary: "Old Standard TT", serif;
+$font-family-text: "Noto Sans", sans-serif;
+
+h1, h1 * {
+	font-family: $font-family-primary;
+	font-size: 6rem;
+	font-weight: normal;
+}
+
+h2, h2 * {
+	font-family: $font-family-primary;
+	font-size: 2rem;
+	font-weight: normal;
+	line-height: 1.8em;
+}
+
+h3, h3 * {
+	font-family: $font-family-primary;
+	font-size: 0.875rem;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h4, h4 * {
+	font-family: $font-family-primary;
+	font-size: 2rem;
+	font-weight: normal;
+}
+
+p {
+	font-family: $font-family-text;
+	font-size: 1rem;
+	line-height: 1.6em;
+}

@@ -1,0 +1,21 @@
+@use "../abstracts/mixins" as m;
+
+section.about .content{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 5vw;
+
+  @include m.respond-to(desktop) {
+    grid-template-columns: auto auto;
+    gap: 126px 256px;
+    width: 1050px;
+  }
+
+  .panel__name {
+    text-align: center;
+    opacity: 70%;
+    margin-bottom: 16px;
+  }
+}

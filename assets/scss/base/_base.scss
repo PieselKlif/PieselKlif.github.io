@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/typography" as t;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: t.$font-family-text;
+  color: v.$text-color;
+}

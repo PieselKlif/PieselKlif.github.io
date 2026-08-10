@@ -1,0 +1,93 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/typography" as t;
+@use "../abstracts/mixins" as m;
+
+header {
+  margin-top: 2.5rem;
+  padding: 0 5vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  div {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+  }
+
+  img {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 36px;
+    box-shadow: 5px 5px 14px 0 rgba(45, 45, 45, 0.25);
+  }
+
+  @include m.respond-to(desktop) {
+    justify-content: center;
+    flex-direction: row;
+    gap: 8rem;
+
+    div { max-width: none; }
+
+    img {
+      width: 26rem;
+      height: 26rem;
+    }
+  }
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: v.$accent-color;
+  height: 8px;
+  width: 100%;
+  border-radius: 16px 0 16px 0;
+}
+
+svg {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  z-index: -1;
+  top: 32px;
+
+  @include m.respond-to(desktop) {
+    display: block;
+    width: 450px;
+    height: auto;
+    bottom: -280px;
+    left: -120px;
+  }
+}
+
+svg path:nth-child(1) {
+  stroke-dasharray: 1061.601806640625;
+  stroke-dashoffset: 1061.601806640625;
+  animation: hello_animation 1.4s linear forwards;
+}
+
+.st0 {
+  fill: none;
+  stroke: v.$accent-color;
+  stroke-miterlimit: 10;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@keyframes hello_animation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

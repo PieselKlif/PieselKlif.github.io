@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/typography" as t;
+@use "../abstracts/mixins" as m;
+
+section {
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    margin-bottom: 6vh;
+
+    h3 {
+      opacity: 70%;
+      text-align: center;
+    }
+
+    @include m.respond-to(desktop) {
+      margin-bottom: 16vh;
+    }
+  }
+}
