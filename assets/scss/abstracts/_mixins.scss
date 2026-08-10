@@ -1,0 +1,21 @@
+@use "sass:map";
+
+$breakpoints: (
+  mobile: 0,
+  tablet: 768px,
+  desktop: 1025px
+);
+
+@mixin respond-to($breakpoint) {
+  $min: map.get($breakpoints, $breakpoint);
+  @if $min == null {
+    @warn "No breakpoint '#{$breakpoint}' found in $breakpoints.";
+    @content;
+  } @else if $min == 0 {
+    @content;
+  } @else {
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+}

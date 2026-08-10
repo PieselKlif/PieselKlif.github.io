@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/typography" as t;
+@use "../abstracts/mixins" as m;
+
+footer {
+	border-top: 1px solid v.$text-color;
+
+	margin-top: 8rem;
+	margin-bottom: 4rem;
+
+	padding-top: 4rem;
+
+	padding-left: 5vw;
+	padding-right: 5vw;
+
+	.top {
+		h3 {
+			opacity: 70%;
+			margin-bottom: 2px;
+		}
+
+		a {
+			margin-top: 4px;
+
+			text-decoration: none;
+			
+			color: v.$accent-color;
+		}
+	}
+
+	.bottom {
+		margin-top: 2rem;
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+
+		a {
+			margin-right: 0;
+
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		p {
+			opacity: 70%;
+		}
+
+		@include m.respond-to(tablet) {
+			flex-direction: row;
+			justify-content: space-between;
+
+			a { margin-right: 16px; }
+		}
+	}
+}

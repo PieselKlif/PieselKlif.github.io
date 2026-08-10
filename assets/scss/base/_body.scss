@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/typography" as t;
+
+body {
+  background-color: #F4F1EA;
+  background-image: linear-gradient(#e2dfd9 1px, transparent 1px), linear-gradient(90deg, #e2dfd9 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: 15px 15px;
+}

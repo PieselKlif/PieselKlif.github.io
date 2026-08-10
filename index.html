@@ -1,309 +1,266 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Piesel Klif</title>
-    <link
-      rel="shortcut icon"
-      href="/assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <script src="/assets/js/app.js" defer></script>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  <body>
-    <div id="graf-view" style="display: none">
-      <ion-icon
-        id="close-img-viewer"
-        name="close-outline"
-        size="large"
-      ></ion-icon>
-      <img id="graf-viewer-img" src="" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bartosz Warda | Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="shortcut icon" href="./assets/images/Icon.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- ==== HERO ==== -->
+  <header>
+    <div>
+      <h1>Bartosz Warda</h1>
+      <h2>
+        <span class="underline">Full-Stack Developer</span>, który dba o to,<br> co pod maską, i o to, co widzi Twój klient.
+      </h2>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 595.28 841.89">
+        <path class="st0" d="M283.55,312.98c-2.04,27.76-9.26,55.14-21.17,80.3-2.1,4.44-5.04,9.34-9.9,10.09-3.01-10.91-1.1-23.09,5.11-32.56,1.41-2.15,4.88-1.85,6.81-.14s2.78,4.29,3.79,6.66c2.18,5.1,5.98,10.11,11.43,11.17,7.09,1.37,13.59-4.46,17.26-10.68,3.39-5.74,5.56-12.43,4.79-19.05-1.31-11.12-10.4-19.63-19.68-25.88-3.81-2.57-7.93-5.01-12.5-5.5s-9.7,1.46-11.61,5.65c-2.35,5.18,1.43,11.64,6.77,13.62s13.06,3.3,18.5,1.66,11.48-2.78,15.08-16.82c1.37-5.32,1.83-9.44.96-15.64-.21-1.48-1.36-6.06-3.06-10.13-2.96-7.11-7.36-15.22-13.31-20.72s-11.29-9.58-18.87-10.96c-6.43-1.17-13.16.68-18.75,4.07s-10.17,8.22-14.24,13.33c-22.82,28.62-31.09,68.26-21.6,103.61,1.75,6.53,4.08,12.93,7.39,18.83,9.05,16.16,25.63,27.89,43.88,31.05,4.68.81,9.51,1.08,14.18.18,4.67-.9,9.06-2.96,13.04-5.56,18.82-12.28,27.47-35.1,33.59-56.73,5.46-19.29,9.89-39.37,7.46-59.27-.76-6.27-2.52-12.98-7.52-16.84-6.71,3.55-8.25,12.37-8.49,19.95-.44,13.86.87,27.77,3.89,41.3,1.26,5.65,2.87,11.35,6.15,16.12,1.82,2.65,4.83,5.17,7.93,4.33,2.17-.59,3.59-2.64,4.71-4.59,5.29-9.18,8.41-19.6,9.06-30.18-4.92,7.44-4.77,17.89.35,25.2,9.68-12.85,15.57-28.51,16.75-44.55.26-3.53.37-7.3,2.41-10.2,4.69,2.34,5.42,8.89,9.3,12.42,3.79,3.45,9.89,3.17,14.4.73s7.8-6.6,10.95-10.64"/>
+      </svg>
     </div>
-    <header>
-      <div class="content">
-        <div>
-          <h1>Hej, to tutaj!</h1>
-          <p>
-            Dobrze trafiłeś/aś. Ta strona to początek naszej przygody – przewiń
-            niżej, żeby dowiedzieć się więcej o mnie i moich projektach.
-          </p>
+    <img src="./assets/images/prof.jpg" alt="Bartosz Warda - zdjęcie profilowe">
+  </header>
+
+  <!-- ==== ABOUT ME ==== -->
+  <section class="about">
+    <div class="header">
+      <h3>poznaj moją filozofię</h3>
+      <h2>Moje podejście</h2>
+    </div>
+    <div class="content">
+      <article class="panel">
+        <p class="panel__name">( rzemiosło )</p>
+        <p class="panel__content"><b>Fullstack Development.</b> Niedawno ukończyłem szkołę jako technik informatyk, przekładając solidne fundamenty teoretyczne na nowoczesny kod. Projektuję aplikacje od surowej bazy danych po dopracowany, intuicyjny interfejs. Dbam o to, co niewidoczne dla oka, i o to, co zachwyca użytkownika.</p>
+      </article>
+      <article class="panel">
+        <p class="panel__name">( filozofia )</p>
+        <p class="panel__content"><b>Czysty Kod, Szybkie Działanie.</b> Dobrze zaprojektowana aplikacja to taka, która nie obciąża użytkownika ani serwera. Stawiam na przemyślaną strukturę, wysoką wydajność oraz optymalizację. Mniejsza liczba zbędnych zapytań i czytelne komponenty to gwarancja błyskawicznego działania strony.</p>
+      </article>
+      <article class="panel">
+        <p class="panel__name">( pasja )</p>
+        <p class="panel__content"><b>Poza ekranem.</b> Moje podejście pozwala mi na dążenie do ciągłej doskonałości. Z każdego projektu wyciągam wnioski, by zastosować lepsze metody w kolejnym. Szukam balansu między technologią a sztuką, co pozwala mi świeżym okiem patrzeć na każdy cyfrowy produkt.</p>
+      </article>
+      <article class="panel">
+        <p class="panel__name">( narzędzia )</p>
+        <p class="panel__content"><b>Nowoczesny stos.</b> W codziennej pracy łączę WordPress, PHP, HTML, CSS, SCSS, JS. Wybieram rozwiązania, które gwarantują szybkość działania aplikacji i czystość struktury kodu, pozwalając na jej płynny rozwój. Wykorzystuję AI jako narzędzie, a nie jako robota. Pozwala mi ono na szybsze budowanie łatwych części kodu.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==== PORTFOLIO ==== -->
+  <section class="portfolio">
+    <div class="header">
+      <h3>wybrane prace</h3>
+      <h2>Cyfrowe rzemiosło</h2>
+    </div>
+    <div class="content">
+      <article class="project">
+        <div class="projectHeader">
+          <span class="projectHeader__number">01 /</span>
+          <h4 class="projectHeader__title">ZST Rzeszów WP</h4>
         </div>
-        <div class="prof">
-          <div class="ring"></div>
-          <div class="ring"></div>
-          <div class="ring"></div>
-          <div class="ring"></div>
-          <img src="/assets/images/prof.png" alt="prof" />
+        
+        <div class="projectDetails">
+          <div class="projectDetails__block">
+            <div class="label">Problem</div>
+            <div class="text">Statyczna strona HTML z utrudnionym dodawaniem artykułów.</div>
+          </div>
+
+          <div class="projectDetails__block">
+            <div class="label">Rozwiązanie</div>
+            <div class="text">Stworzenie strony opartej na CMS WordPress.</div>
+          </div>
+
+          <div class="projectDetails__tags">
+            <span class="tag">[ WordPress ]</span>
+            <span class="tag">[ PHP ]</span>
+            <span class="tag">[ SCSS ]</span>
+            <span class="tag">[ JS ]</span>
+          </div>
+
+          <div class="projectDetails__links">
+            <a target="_blank" rel="noopener" href="https://github.com/PieselKlif/zstrzeszow-wordpress-theme" class="link">[ Kod GitHub → ]</a>
+          </div>
         </div>
-        <div class="arrow">
-          <p>przewiń niżej</p>
-          <ion-icon name="chevron-down-outline"></ion-icon>
+      </article>
+
+      <article class="project">
+        <div class="projectHeader">
+          <span class="projectHeader__number">02 /</span>
+          <h4 class="projectHeader__title">EcoStyl</h4>
         </div>
+        
+        <div class="projectDetails">
+          <div class="projectDetails__block">
+            <div class="label">Problem</div>
+            <div class="text">Potrzeba stworzenia nowoczesnej platformy symulującej ekologiczny sklep internetowy.</div>
+          </div>
+
+          <div class="projectDetails__block">
+            <div class="label">Rozwiązanie</div>
+            <div class="text">Stworzenie funkcjonalnej strony e-commerce opartej na PHP i skryptach klienckich.</div>
+          </div>
+
+          <div class="projectDetails__tags">
+            <span class="tag">[ PHP ]</span>
+            <span class="tag">[ SCSS ]</span>
+            <span class="tag">[ JS ]</span>
+          </div>
+
+          <div class="projectDetails__links">
+            <a target="_blank" rel="noopener" href="https://github.com/PieselKlif/EcoStyl" class="link">[ Kod GitHub → ]</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="projectHeader">
+          <span class="projectHeader__number">03 /</span>
+          <h4 class="projectHeader__title">Biletowo</h4>
+        </div>
+        
+        <div class="projectDetails">
+          <div class="projectDetails__block">
+            <div class="label">Problem</div>
+            <div class="text">Brak dedykowanego rozwiązania do kompleksowego zakupu biletów na wydarzenia.</div>
+          </div>
+
+          <div class="projectDetails__block">
+            <div class="label">Rozwiązanie</div>
+            <div class="text">Stworzenie projektu strony z możliwością wyboru miejsc, typu biletów, podsumowaniem zakupu oraz wysyłaniem potwierdzenia zakupu wraz z biletem na adres e-mail.</div>
+          </div>
+
+          <div class="projectDetails__tags">
+            <span class="tag">[ PHP ]</span>
+            <span class="tag">[ SCSS ]</span>
+            <span class="tag">[ JS ]</span>
+          </div>
+
+          <div class="projectDetails__links">
+            <a target="_blank" rel="noopener" href="https://github.com/PieselKlif/biletowo" class="link">[ Kod GitHub → ]</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- === Techstack === -->
+  <section class="techstack">
+    <div class="header">
+      <h3>mój warsztat</h3>
+      <h2>Technologie i Narzędzia</h2>
+    </div>
+    <div class="content">
+      <article class="project">
+        <div class="projectHeader">
+          <span class="projectHeader__number">01 /</span>
+          <h4 class="projectHeader__title">Frontend</h4>
+        </div>
+        
+        <div class="projectDetails">
+          <div class="projectDetails__tags">
+            <span class="tag">[ JavaScript ES6+ ]</span>
+            <span class="tag">[ HTML5 / CSS3 ]</span>
+            <span class="tag">[ SASS / SCSS ]</span>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="projectHeader">
+          <span class="projectHeader__number">02 /</span>
+          <h4 class="projectHeader__title">Backend & CMS</h4>
+        </div>
+        
+        <div class="projectDetails">
+          <div class="projectDetails__tags">
+            <span class="tag">[ PHP ]</span>
+            <span class="tag">[ WordPress ]</span>
+            <span class="tag">[ MySQL ]</span>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="projectHeader">
+          <span class="projectHeader__number">03 /</span>
+          <h4 class="projectHeader__title">Workflow</h4>
+        </div>
+        
+        <div class="projectDetails">
+          <div class="projectDetails__tags">
+            <span class="tag">[ Figma ]</span>
+            <span class="tag">[ Git / GitHub ]</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- === Timeline === -->
+  <section class="timeline">
+    <div class="header">
+      <h3>moja ścieżka rozwoju</h3>
+      <h2>Doświadczenie i Edukacja</h2>
+    </div>
+    <div class="content">
+      <div class="timelineItem">
+        <div class="timelineItem__dot"></div>
+        <div class="timelineItem__date">[ 2025 - 2025 ]</div>
+        <h4 class="timelineItem__title">Miesięczny staż</h4>
+        <div class="timelineItem__subtitle">Urząd Miasta Rzeszowa</div>
+        <p class="timelineItem__description">
+          Zarządzanie treściami za pomocą systemu CMS Web360.
+        </p>
       </div>
-    </header>
-    <nav>
-      <a class="active" data-target="section1">O mnie</a>
-      <a data-target="section2">Social</a>
-      <a data-target="section3">Projekty</a>
-      <a data-target="section4">Grafiki</a>
-      <a data-target="section5">Gry</a>
-      <a data-target="section6">Kontakt</a>
-    </nav>
-    <main>
-      <section id="section1" class="active col">
-        <div class="panel">
-          <h2>👤 Kim jestem?</h2>
-          <p>
-            Cześć! Nazywam się PieselKlif (to mój pseudonim), a programowanie to
-            moja pasja. Specjalizuję się w tworzeniu stron internetowych i
-            aplikacji, stale rozwijając swoje umiejętności w JavaScript, HTML, i
-            CSS (SCSS). Mam też doświadczenie w programowaniu w Pythonie,
-            tworzeniu botów na Discorda i pisaniu prostych programów.
-          </p>
-        </div>
-        <div class="panel">
-          <h2>🎯 Moja misja</h2>
-          <p>
-            Uwielbiam rozwiązywać problemy i realizować ciekawe projekty, które
-            łączą estetykę z funkcjonalnością. Moim celem jest tworzenie
-            rozwiązań, które wyróżniają się jakością i intuicyjnością.
-          </p>
-        </div>
-        <div class="panel">
-          <h2>💡 Co mnie inspiruje?</h2>
-          <p>
-            Inspiruje mnie ciągły rozwój. Każdy projekt to dla mnie nowe
-            wyzwanie, a każde wyzwanie to okazja do nauki i udoskonalenia swoich
-            umiejętności.
-          </p>
-        </div>
-      </section>
-      <section id="section2" class="social">
-        <a
-          target="_blank"
-          href="https://github.com/pieselklif"
-          style="--color: #020409"
-          ><ion-icon name="logo-github"></ion-icon
-        ></a>
-        <a
-          target="_blank"
-          href="https://www.youtube.com/@pieselklif"
-          style="--color: #ec1a25"
-          ><ion-icon name="logo-youtube"></ion-icon
-        ></a>
-        <a
-          target="_blank"
-          href="https://twitter.com/PieselKlif"
-          style="--color: #4fa3f3"
-          ><ion-icon name="logo-twitter"></ion-icon
-        ></a>
-        <a
-          target="_blank"
-          href="https://www.twitch.tv/piesel_klif"
-          style="--color: #9d0eff"
-          ><ion-icon name="logo-twitch"></ion-icon
-        ></a>
-        <a
-          target="_blank"
-          href="https://www.tiktok.com/@piesel_klif"
-          style="--color: #000000"
-          ><ion-icon name="logo-tiktok"></ion-icon
-        ></a>
-        <a
-          target="_blank"
-          href="https://discord.com/users/398931363618881537"
-          style="--color: #6b50f1"
-          ><ion-icon name="logo-discord"></ion-icon
-        ></a>
-      </section>
-      <section id="section3" class="col">
-        <div class="panel">
-          <h2>🕸 Strony</h2>
-          <ol>
-            <li><a href="https://pieselklif.github.io/">PieselKlif.github.io</a></li>
-            <li><a href="https://zzswiki.github.io/">zzswiki.github.io</a></li>
-            <li><a href="https://pieselklif.github.io/Timer">Timer</a></li>
-            <li><a href="https://github.com/PieselKlif/biletowo">Biletowo</a></li>
-          </ol>
-        </div>
-        <div class="panel">
-          <h2>👨‍💻 Programy</h2>
-          <ol>
-            <li>
-              <a href="https://github.com/PieselKlif/discord-spotted"
-                >Discord spotted</a
-              >
-            </li>
-          </ol>
-        </div>
-      </section>
-      <section id="section4" class="graf">
-        <img
-          data-target="baner PieselKlif.jpg"
-          src="/assets/images/grafika/small/baner PieselKlif.jpg"
-          alt=""
-        />
-        <img
-          data-target="Harry Potter i nieznana blizna.jpg"
-          src="/assets/images/grafika/small/Harry Potter i nieznana blizna.jpg"
-          alt=""
-        />
-        <img
-          data-target="króliczek gotowe.png"
-          src="/assets/images/grafika/small/króliczek gotowe.png"
-          alt=""
-        />
-        <img
-          data-target="live miniaturka.png"
-          src="/assets/images/grafika/small/live miniaturka.png"
-          alt=""
-        />
-        <img
-          data-target="lowpoly.png"
-          src="/assets/images/grafika/small/lowpoly.png"
-          alt=""
-        />
-        <img
-          data-target="luxongrafika.png"
-          src="/assets/images/grafika/small/luxongrafika.png"
-          alt=""
-        />
-        <img
-          data-target="miniatura.png"
-          src="/assets/images/grafika/small/miniatura.png"
-          alt=""
-        />
-        <img
-          data-target="overlay.png"
-          src="/assets/images/grafika/small/overlay.png"
-          alt=""
-        />
-        <img
-          data-target="piesel 2.png"
-          src="/assets/images/grafika/small/piesel 2.png"
-          alt=""
-        />
-        <img
-          data-target="piesel trójkąty 2.png"
-          src="/assets/images/grafika/small/piesel trójkąty 2.png"
-          alt=""
-        />
-        <img
-          data-target="prof.png"
-          src="/assets/images/grafika/small/prof.png"
-          alt=""
-        />
-      </section>
-      <section id="section5" class="games">
-        <span
-          >Wszystkie gry znajdują się na moim profilu na
-          <a href="https://pieselklif.itch.io/" target="_blank"
-            >itch.io</a
-          ></span
-        >
-        <div class="content">
-          <a
-            class="panel"
-            target="_blank"
-            href="https://pieselklif.itch.io/hard-scary"
-          >
-            <img src="/assets/images/games/+GDlqF.png" alt="Hard scary" />
-            <div>
-              <h2>Hard scary</h2>
-              <p>
-                Jest to bardzo straszna gra, która polega na przejściu prostego
-                labiryntu.
-              </p>
-            </div>
-          </a>
-          <a
-            class="panel"
-            target="_blank"
-            href="https://pieselklif.itch.io/tutmaze"
-          >
-            <img src="/assets/images/games/p0nRWy.png" alt="Tutmaze" />
-            <div>
-              <h2>Tutmaze</h2>
-              <p>
-                Ta gra została zrobiona na szybko specjalnie na tutjam. Polega
-                na przejściu podziemnego labiryntu.
-              </p>
-            </div>
-          </a>
-          <a
-            class="panel"
-            target="_blank"
-            href="https://pieselklif.itch.io/plants"
-          >
-            <img src="/assets/images/games/UNcibg.png" alt="Plants" />
-            <div>
-              <h2>Plants</h2>
-              <p>
-                Jedna z moich pierwszych gier. Sens gry jest prosty: sadzisz,
-                zbierasz, sprzedajesz.
-              </p>
-            </div>
-          </a>
-          <a
-            class="panel"
-            target="_blank"
-            href="https://pieselklif.itch.io/fat-runner"
-          >
-            <img src="/assets/images/games/V7VyjS.png" alt="Fat Runner" />
-            <div>
-              <h2>Fat Runner</h2>
-              <p>Gra polega na przejściu trasy w jak najszybszym czasie.</p>
-            </div>
-          </a>
-          <a
-            class="panel"
-            target="_blank"
-            href="https://pieselklif.itch.io/klif-clicker"
-          >
-            <img src="/assets/images/games/zzpO+j.png" alt="Klif Clicker" />
-            <div>
-              <h2>Klif Clicker</h2>
-              <p>Klikasz > sprzedajesz > kupujesz ulepszenie > klikasz</p>
-            </div>
-          </a>
-        </div>
-      </section>
-      <section id="section6" class="mess">
-        <ul>
-          <li>
-            <a href="mailto:pieselklif@gmail.com">
-              <ion-icon name="mail"></ion-icon>
-              Napisz do mnie maila!
-            </a>
-          </li>
-          <li>
-            <a href="https://discord.com/users/398931363618881537">
-              <ion-icon name="logo-discord"></ion-icon>
-              Napisz do mnie na discord!
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <span class="license"
-        >&copy; PieselKlif 2025, licensed under
-        <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/"
-          >CC BY-SA</a
-        ></span
-      >
-    </footer>
-  </body>
+
+      <div class="timelineItem">
+        <div class="timelineItem__dot"></div>
+        <div class="timelineItem__date">[ 2025 - 2025 ]</div>
+        <h4 class="timelineItem__title">Praktyki Zawodowe</h4>
+        <div class="timelineItem__subtitle">CetusPro</div>
+        <p class="timelineItem__description">
+          Tworzenie aplikacji internetowych przy pomocy frameworka React.
+        </p>
+      </div>
+
+      <div class="timelineItem">
+        <div class="timelineItem__dot"></div>
+        <div class="timelineItem__date">[ 2024 - 2024 ]</div>
+        <h4 class="timelineItem__title">Praktyki Zawodowe</h4>
+        <div class="timelineItem__subtitle">CetusPro</div>
+        <p class="timelineItem__description">
+          Tworzenie aplikacji internetowych przy pomocy frameworka React.
+        </p>
+      </div>
+
+      <div class="timelineItem">
+        <div class="timelineItem__dot"></div>
+        <div class="timelineItem__date">[ 2021 - 2026 ]</div>
+        <h4 class="timelineItem__title">Technik Informatyk</h4>
+        <div class="timelineItem__subtitle">Zespół Szkół Technicznych im. Eugeniusza Kwiatkowskiego w Rzeszowie</div>
+        <p class="timelineItem__description">
+          Zdane kwalifikacje zawodowe INF.02 oraz INF.03.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Footer === -->
+  <footer>
+    <div class="top">
+      <h3>MASZ PROJEKT DO ZREALIZOWANIA?</h3>
+      <h4>Stwórzmy coś razem.</h4>
+      <a href="mailto:bartosz.warda.kontakt@gmail.com">bartosz.warda.kontakt@gmail.com</a>
+    </div>
+    <div class="bottom">
+      <div class="left">
+        <a target="_blank" rel="noopener" href="https://github.com/PieselKlif">[ GitHub ]</a>
+        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/bartosz-warda-139876425/">[ LinkedIn ]</a>
+      </div>
+      <p class="right">
+        &copy; 2026 Bartosz Warda. Wszystkie prawa zastrzeżone.
+      </p>
+    </div>
+  </footer>
+</body>
 </html>
