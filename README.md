@@ -1,4 +1,7 @@
 <div align="center">
+  <a href="https://github.com/PieselKlif/PieselKlif.github.io">
+    <img src="./assets/images/Icon.svg" alt="Logo" width="80" height="80">
+  </a>
   <h3 align="center">Bartosz Warda — Personal Portfolio Website</h3>
 
   <p align="center">
