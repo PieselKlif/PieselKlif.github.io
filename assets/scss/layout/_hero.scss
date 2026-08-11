@@ -53,6 +53,7 @@ header {
   height: 8px;
   width: 100%;
   border-radius: 16px 0 16px 0;
+  animation: underline 0.4s ease-out forwards;
 }
 
 svg {
@@ -84,6 +85,15 @@ svg path:nth-child(1) {
   stroke-width: 6px;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+@keyframes underline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes hello_animation {
