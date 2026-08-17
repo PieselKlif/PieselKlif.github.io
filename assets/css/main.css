@@ -40,6 +40,14 @@ p {
   color: #2D2D2D;
 }
 
+.scroll-reveal {
+  opacity: 0%;
+  transition: 0.3s ease-in-out;
+}
+.scroll-reveal.is-visible {
+  opacity: 100%;
+}
+
 body {
   background-color: #F4F1EA;
   background-image: linear-gradient(#e2dfd9 1px, transparent 1px), linear-gradient(90deg, #e2dfd9 1px, transparent 1px);

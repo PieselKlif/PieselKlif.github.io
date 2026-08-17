@@ -8,3 +8,12 @@
   font-family: t.$font-family-text;
   color: v.$text-color;
 }
+
+.scroll-reveal {
+	opacity: 0%;
+	transition: 0.3s ease-in-out;
+	
+	&.is-visible {
+		opacity: 100%;
+	}
+}
