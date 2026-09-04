@@ -70,6 +70,19 @@ svg {
     bottom: -280px;
     left: -120px;
   }
+
+  @media (max-width: 1297px) {
+    top: 160px;
+  }
+
+  @media (max-width: 1247px) {
+    top: 200px;
+  }
+
+  @media (max-width: 1174px) {
+    top: 270px;
+  }
+
 }
 
 svg path:nth-child(1) {
